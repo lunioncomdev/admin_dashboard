@@ -6,7 +6,7 @@ import { auth } from "@/lib/auth";
 import { z } from "zod";
 
 const projectSchema = z.object({
-  name: z.string().min(1, "Nom requis"),
+  name: z.string().min(1, "Nom requis"), 
   description: z.string().optional(),
   clientId: z.string().min(1, "Client requis"),
   ownerId: z.string().optional(),
